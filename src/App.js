@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -7,7 +6,6 @@ import Card from './component/Card';
 
 function App() {
   const [location, setLocation] = useState({});
-  
   const success = pos => {
 
   const latitude = pos.coords.latitude;
@@ -15,7 +13,7 @@ function App() {
 
   axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=e0d603689a0dfadcb453425530e93f85`).then(res =>  setLocation(res.data)) ;
 }
-  console.log(location)
+  
     
   useEffect(()=>{
     navigator.geolocation.getCurrentPosition(success);
