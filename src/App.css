@@ -1,5 +1,81 @@
+
+  html{
+    /* la imagen a ser mostrada a pantalla completa */
+    background:url('https://pa1.narvii.com/7849/6774564c39a79915e7802874c3f0509af2998076r1-435-250_hq.gif') no-repeat center center;
+ 
+    /* nos aseguramos que el elemento ocupe toda la ventana del navegador */
+    min-height:100%;
+ 
+    /* Propiedad a utilizar para la imagen */
+    background-size:cover;
+
+  
+}
 .App {
   text-align: center;
+  
+  
+}
+.Card {
+  width: 30%;
+  margin: 1% auto;
+  border: 3px solid black;
+  box-shadow: 3px 3px 3px 4px #8b8888;
+  border-radius: 10%;
+  padding: 3vw 0;
+  font-family: cursive;
+  background: gainsboro;
+  
+} 
+.Card>p{
+  font-size: 3.2vw;
+}
+.Card img{
+  width: 50%;
+
+}
+.temperature{
+  font-size: 33px;
+  margin-top: -10px;
+  margin-bottom: 0;
+ 
+  
+}
+.container{
+
+  padding: 6%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  
+
+}
+.elementOne{
+  grid-column: 1/2;
+  margin-left: -3px;
+
+}
+.elementTwo{
+  grid-column: 3/4;
+  
+}
+.elementThree{
+  grid-column: 1/2;
+ 
+}
+.elementFour{
+  grid-column: 3/4;
+  
+}
+.elementFive{
+  grid-column: 2/3;
+  grid-row: 1/4;
+  margin: 15px;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 80%;
+  font-family: cursive;
 }
 
 .App-logo {
