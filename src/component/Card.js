@@ -27,9 +27,7 @@ const Card = ({
     },3000)
   }, []);
 
-  const durationLoanding=()=>{
-   
-  }
+ 
 
   return (
     <div className="Card">
