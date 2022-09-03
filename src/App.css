@@ -1,114 +1,103 @@
-
-  html{
-    /* la imagen a ser mostrada a pantalla completa */
-    background:url('https://pa1.narvii.com/7849/6774564c39a79915e7802874c3f0509af2998076r1-435-250_hq.gif') no-repeat center center;
- 
-    /* nos aseguramos que el elemento ocupe toda la ventana del navegador */
-    min-height:100%;
- 
-    /* Propiedad a utilizar para la imagen */
-    background-size:cover;
-
-  
+body{
+  background: url('./imgs/web.gif') ;
+  image-rendering: pixelated;
 }
 .App {
   text-align: center;
-  
-  
+}
+.loanding{
+  background: transparent;
+}
+
+.title-app{
+  padding-top: 20px;
+  font-size: 30px;
+  width: 60%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+
 }
 .Card {
   width: 30%;
-  margin: 1% auto;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-top: 15px;
   border: 3px solid black;
   box-shadow: 3px 3px 3px 4px #8b8888;
   border-radius: 10%;
-  padding: 3vw 0;
+ min-height: 500px;
   font-family: cursive;
   background: gainsboro;
-  
-} 
-.Card>p{
-  font-size: 3.2vw;
+  position: relative;
+
 }
-.Card img{
+.country{
+  font-size: 17px;
+}
+
+.temperature {
+  font-size: 3em;
+  box-shadow: 3px 3px 3px 4px #8b8888;
   width: 50%;
-
+  margin: 0 auto;
+  min-width: 130px;
+  border-radius: 10%;
 }
-.temperature{
-  font-size: 33px;
-  margin-top: -10px;
-  margin-bottom: 0;
- 
-  
+.container {
+  padding: 10%;
 }
-.container{
-
-  padding: 6%;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr ;
-  
-
+.elementOne {
+  position: absolute;
+  left: 0;
+  padding: 10px;
 }
-.elementOne{
-  grid-column: 1/2;
-  margin-left: -3px;
-
+.elementOne::first-letter {
+  text-transform: uppercase;
 }
-.elementTwo{
+.elementTwo {
+  /* grid-column: 3/4;
+ */
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}
+.elementTwo::first-letter {
+  text-transform: uppercase;
+}
+.elementThree {
+  /* grid-column: 1/2; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+.elementThree::first-letter {
+  text-transform: uppercase;
+}
+.elementFour {
   grid-column: 3/4;
-  
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
 }
-.elementThree{
-  grid-column: 1/2;
- 
+.elementFour::first-letter {
+  text-transform: uppercase;
 }
-.elementFour{
-  grid-column: 3/4;
-  
-}
-.elementFive{
-  grid-column: 2/3;
-  grid-row: 1/4;
-  margin: 15px;
+.elementFive {
+  height: 100px;
+  margin: 15px auto;
   border-radius: 10%;
   cursor: pointer;
   font-size: 80%;
   font-family: cursive;
+  width: 35%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.elementFive::first-letter {
+  text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.elementFive:active {
+ background: black;
+ color: #fff;
 }

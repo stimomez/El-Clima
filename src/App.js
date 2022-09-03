@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Card from './component/Card';
 
 
+
 function App() {
   const [location, setLocation] = useState({});
   const success = pos => {
@@ -24,6 +25,7 @@ function App() {
  const Temperaturefahrenheit = (Math.round( ((temperatureCelsius) *  (9/5)) + 32 ) ); 
    return (
     <div className="App">
+      
       <Card city={location.name}
             icon={` http://openweathermap.org/img/wn/${location.weather?.[0].icon}@2x.png`}
             country={location.sys?.country}
